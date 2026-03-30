@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neo Vision Engineering Limited - CCTV, Security Systems, Networking, Electrical, and Sound Solutions">
+    <title>Neo Vision Engineering Limited | CCTV & Security Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+</head>
+<body>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <i class="fas fa-shield-alt"></i>
+                <span>Neo Vision</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Neo vision offers Reliable Electrical & Networking Solutions</h1>
+            <p class="hero-subtitle">Professional Security, Networking, and Electrical Services for Your Business and homes </p>
+            <button class="cta-button" onclick="scrollToContact()">Request a Quote</button>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES SECTION ============ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions for your security and infrastructure needs</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- CCTV & Security -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>CCTV & Security Systems</h3>
+                    <p>Professional CCTV installation, biometric access control, and security lighting systems for residential and commercial properties.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> CCTV Installation</li>
+                        <li><i class="fas fa-check-circle"></i> Biometric Systems</li>
+                        <li><i class="fas fa-check-circle"></i> Security Lights</li>
+                    </ul>
+                </div>
+
+                <!-- Networking -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Installation</h3>
+                    <p>Structured cabling, network setup, and installation services to ensure reliable connectivity for your operations.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Structured Cabling</li>
+                        <li><i class="fas fa-check-circle"></i> Network Configuration</li>
+                        <li><i class="fas fa-check-circle"></i> Installation Support</li>
+                    </ul>
+                </div>
+
+                <!-- Electrical -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Electrical Services</h3>
+                    <p>Electrical installation, repairs, maintenance, and equipment sales with certified technicians.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Installation & Repairs</li>
+                        <li><i class="fas fa-check-circle"></i> Equipment Sales</li>
+                        <li><i class="fas fa-check-circle"></i> Maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Events & Sound -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Events & Sound</h3>
+                    <p>Professional DJ services, MC hosting, and premium sound system rentals for events.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Sound System Hire</li>
+                        <li><i class="fas fa-check-circle"></i> Professional DJs</li>
+                        <li><i class="fas fa-check-circle"></i> MC Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS / GALLERY SECTION ============ -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Projects</h2>
+                <p>Showcasing our completed installations and successful projects</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Project Card 1 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src=images/cctv.jpeg "https://via.placeholder.com/400x300?text=CCTV+Installation" alt="CCTV Installation">
+                        <div class="gallery-overlay">
+                            <span>CCTV Security System</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src=images/cabling.jpg "https://via.placeholder.com/400x300?text=Network+Setup" alt="Network Installation">
+                        <div class="gallery-overlay">
+                            <span>Structured Cabling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src=images/electrical.jpg "https://via.placeholder.com/400x300?text=Electrical+Work" alt="Electrical Installation">
+                        <div class="gallery-overlay">
+                            <span>Electrical Installation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src=images/sound.jpg "https://via.placeholder.com/400x300?text=Event+Sound" alt="Sound System">
+                        <div class="gallery-overlay">
+                            <span>Event Sound System</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src=images/network.jpg "https://via.placeholder.com/400x300?text=Security+Lights" alt="Security Lights">
+                        <div class="gallery-overlay">
+                            <span>Network management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="gallery-item">
+                    <div class="gallery-image-wrapper">
+                        <img src=images/bio.jpg "https://via.placeholder.com/400x300?text=Biometric+System" alt="Biometric System">
+                        <div class="gallery-overlay">
+                            <span>Biometric Access</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have a project in mind? Let's discuss your requirements</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Required *</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- Select a service --</option>
+                            <option value="cctv">CCTV & Security Systems</option>
+                            <option value="networking">Network Installation</option>
+                            <option value="electrical">Electrical Services</option>
+                            <option value="events">Events & Sound</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Describe your project or inquiry..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Inquiry</button>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>0729311087</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>neovisionengineeringltd@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Nairobi, Kenya</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Business Hours</h4>
+                            <p>Mon - Sat: 8:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Neo Vision Engineering Limited. All rights reserved.</p>
+                <p>Building trust through reliable solutions where technology meets excellence </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ WHATSAPP FLOATING BUTTON ============ -->
+    <a href="https://wa.me/254729311087" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
